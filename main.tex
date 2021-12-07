@@ -1,0 +1,154 @@
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Include all the required packages
+\usepackage{libertine}
+
+\usepackage{libertine}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{mathtools}
+\usepackage{comment}
+\usepackage{adjustbox}
+\usepackage{etoolbox}
+
+\usepackage{algorithm}
+\usepackage{algpseudocodex}
+
+\usepackage{multicol}
+\usepackage{varwidth}
+\usepackage{fancybox}
+
+
+\usepackage{tikz}
+\usepackage{pgfplots}    % plot stuff
+\pgfplotsset{compat=1.6} % avoid warnings
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{fit,calc}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{positioning}
+\captionsetup{compatibility=false}
+
+\usepackage[sorting=none]{biblatex}
+\addbibresource{references.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{blindtext} %for dummy text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Start Document
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Report Title Here}}
+\date{{}}
+\maketitle
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Front Page
+\vspace{-20px}
+\begin{center}
+	Seminar Report Submitted for the Partial Fulfilment of\\
+	The Degree of Doctor of Philosophy in\\
+	Computer Science and Engineering\\
+	by\\
+    \vspace{20px}
+	\textbf{Mr XXX XXX}\\
+	Ph.D. Scholar\\
+	Roll No. XXXXXXXX\\
+    \vspace{20px}
+	Under the Supervision of\\
+    \vspace{5px}
+	\textbf{Prof. XXXX XXXX}
+\end{center}
+
+\vspace{10px}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=2.8cm,width=2.5cm]{icons/iitkgplogo.png}
+\end{figure}
+\vspace{10px}
+
+\begin{center}
+{
+	Department of Computer Science and Engineering, \\
+	Indian Institute of Technology, Kharagpur,\\
+	West Bengal, 721302, India.\\
+	\date{\today}
+}
+\end{center}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%=============================================================================
+
+%Table of Contents
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+%List of figures
+\listoffigures
+\thispagestyle{empty}
+\newpage
+
+%List of tables
+\listoftables
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------
+\section{Introduction}
+\blindtext
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chapter 1}
+\blindtext
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[scale=0.2]{fig/placeholder.png}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+Check this~\cite{xu2019hardening}.\par
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        Haha & Hihi \\\hline
+        Hoho & Hehe \\
+    \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+\begin{algorithm}[!tb]
+\small
+  \caption{My great algorithm}
+  \label{algo:my_algo}
+  \begin{algorithmic}[1]
+    \Require{Input parameters.}
+    \Ensure{Output parameters.}
+    \Function{MyAlgo}{$\delta,\sigma$}
+        \State Do your stuff here
+        \State \Return{False}.
+    \EndFunction
+  \end{algorithmic}
+\end{algorithm}
+
+\blindtext
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chapter 2}
+\blindtext
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography[heading=bibintoc,title={References}]
+\end{document}
